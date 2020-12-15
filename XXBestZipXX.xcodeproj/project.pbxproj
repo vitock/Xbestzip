@@ -7,17 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4D046AD2357291600424FDD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D046AC2357291600424FDD /* AppKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C4EA4A3A2356DD1E009C07A6 /* XXBestZipXX.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA4A382356DD1E009C07A6 /* XXBestZipXX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4EA4A422356DD3D009C07A6 /* XXXSS.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA4A402356DD3D009C07A6 /* XXXSS.h */; };
+		C4EA4A432356DD3D009C07A6 /* XXXSS.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA4A412356DD3D009C07A6 /* XXXSS.m */; };
+		C4EA4A4F2356E5C3009C07A6 /* PPS.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA4A4D2356E5C3009C07A6 /* PPS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4EA4A532356E5D0009C07A6 /* SettingsModel.h in Sources */ = {isa = PBXBuildFile; fileRef = C4EA4A442356E521009C07A6 /* SettingsModel.h */; };
+		C4EA4A542356E5D0009C07A6 /* SettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA4A452356E521009C07A6 /* SettingsModel.m */; };
+		C4EA4A582356E668009C07A6 /* PPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EA4A4B2356E5C3009C07A6 /* PPS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4D046AC2357291600424FDD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C4EA4A352356DD1E009C07A6 /* XXBestZipXX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XXBestZipXX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EA4A382356DD1E009C07A6 /* XXBestZipXX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBestZipXX.h; sourceTree = "<group>"; };
 		C4EA4A392356DD1E009C07A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EA4A402356DD3D009C07A6 /* XXXSS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXXSS.h; sourceTree = "<group>"; };
+		C4EA4A412356DD3D009C07A6 /* XXXSS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXXSS.m; sourceTree = "<group>"; };
+		C4EA4A442356E521009C07A6 /* SettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModel.h; sourceTree = "<group>"; };
+		C4EA4A452356E521009C07A6 /* SettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsModel.m; sourceTree = "<group>"; };
+		C4EA4A4B2356E5C3009C07A6 /* PPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EA4A4D2356E5C3009C07A6 /* PPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPS.h; sourceTree = "<group>"; };
+		C4EA4A4E2356E5C3009C07A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4EA4A322356DD1E009C07A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4D046AD2357291600424FDD /* AppKit.framework in Frameworks */,
+				C4EA4A582356E668009C07A6 /* PPS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EA4A482356E5C3009C07A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,7 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				C4EA4A372356DD1E009C07A6 /* XXBestZipXX */,
+				C4EA4A4C2356E5C3009C07A6 /* PPS */,
 				C4EA4A362356DD1E009C07A6 /* Products */,
+				C4EA4A572356E668009C07A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C4EA4A352356DD1E009C07A6 /* XXBestZipXX.framework */,
+				C4EA4A4B2356E5C3009C07A6 /* PPS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,29 @@
 			children = (
 				C4EA4A382356DD1E009C07A6 /* XXBestZipXX.h */,
 				C4EA4A392356DD1E009C07A6 /* Info.plist */,
+				C4EA4A402356DD3D009C07A6 /* XXXSS.h */,
+				C4EA4A412356DD3D009C07A6 /* XXXSS.m */,
+				C4EA4A442356E521009C07A6 /* SettingsModel.h */,
+				C4EA4A452356E521009C07A6 /* SettingsModel.m */,
 			);
 			path = XXBestZipXX;
+			sourceTree = "<group>";
+		};
+		C4EA4A4C2356E5C3009C07A6 /* PPS */ = {
+			isa = PBXGroup;
+			children = (
+				C4EA4A4D2356E5C3009C07A6 /* PPS.h */,
+				C4EA4A4E2356E5C3009C07A6 /* Info.plist */,
+			);
+			path = PPS;
+			sourceTree = "<group>";
+		};
+		C4EA4A572356E668009C07A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4D046AC2357291600424FDD /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +108,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EA4A3A2356DD1E009C07A6 /* XXBestZipXX.h in Headers */,
+				C4EA4A422356DD3D009C07A6 /* XXXSS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EA4A462356E5C3009C07A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EA4A4F2356E5C3009C07A6 /* PPS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +141,24 @@
 			productReference = C4EA4A352356DD1E009C07A6 /* XXBestZipXX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C4EA4A4A2356E5C3009C07A6 /* PPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EA4A502356E5C3009C07A6 /* Build configuration list for PBXNativeTarget "PPS" */;
+			buildPhases = (
+				C4EA4A462356E5C3009C07A6 /* Headers */,
+				C4EA4A472356E5C3009C07A6 /* Sources */,
+				C4EA4A482356E5C3009C07A6 /* Frameworks */,
+				C4EA4A492356E5C3009C07A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPS;
+			productName = PPS;
+			productReference = C4EA4A4B2356E5C3009C07A6 /* PPS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +169,9 @@
 				ORGANIZATIONNAME = LJ;
 				TargetAttributes = {
 					C4EA4A342356DD1E009C07A6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C4EA4A4A2356E5C3009C07A6 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -111,12 +189,20 @@
 			projectRoot = "";
 			targets = (
 				C4EA4A342356DD1E009C07A6 /* XXBestZipXX */,
+				C4EA4A4A2356E5C3009C07A6 /* PPS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C4EA4A332356DD1E009C07A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EA4A492356E5C3009C07A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,6 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EA4A432356DD3D009C07A6 /* XXXSS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EA4A472356E5C3009C07A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EA4A532356E5D0009C07A6 /* SettingsModel.h in Sources */,
+				C4EA4A542356E5D0009C07A6 /* SettingsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +397,54 @@
 			};
 			name = Release;
 		};
+		C4EA4A512356E5C3009C07A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PPS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.PPS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C4EA4A522356E5C3009C07A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PPS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.PPS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -318,6 +462,15 @@
 			buildConfigurations = (
 				C4EA4A3E2356DD1E009C07A6 /* Debug */,
 				C4EA4A3F2356DD1E009C07A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EA4A502356E5C3009C07A6 /* Build configuration list for PBXNativeTarget "PPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EA4A512356E5C3009C07A6 /* Debug */,
+				C4EA4A522356E5C3009C07A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
